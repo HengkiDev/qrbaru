@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner QR Code</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Scanner QR Code</h1>
+        
+        <div class="camera-container">
+            <video id="video" playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+
+        <div class="controls">
+            <select id="camerasSelect">
+                <option value="">Pilih Kamera</option>
+            </select>
+            <button id="startButton">Mulai Scan</button>
+            <button id="stopButton">Berhenti Scan</button>
+        </div>
+
+        <div id="output" class="output">
+            <h3>Hasil Scan:</h3>
+            <p id="resultText">Belum ada hasil</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
